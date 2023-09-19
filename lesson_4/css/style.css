@@ -1,0 +1,167 @@
+@import url("reset.css");
+
+* {
+    color: dimgray;
+}
+
+[class*="red"] {
+    color: red;
+}
+
+[class*="yellow"] {
+    color: yellowgreen;
+}
+
+[class*="green"] {
+    color: green;
+}
+
+header a {
+    color: indigo;
+}
+
+header h3 {
+    color: darkblue;
+}
+
+.header .header-inner p {
+    color: indianred;
+}
+
+.header .header-inner > div > div p {
+    color: rgb(111, 159, 38);
+}
+
+div h2 {
+    color: darkgreen;
+}
+
+div div h3 {
+    color: orangered;
+}
+
+.review p {
+    color: rgb(1, 187, 116);
+}
+
+.review p > a {
+    color: blueviolet;
+}
+
+.list li {
+    color: sienna;
+}
+
+.list .sub-list li {
+    color: peru;
+}
+
+.list a,
+.list-text {
+    color: darkblue;
+}
+
+.list .sub-list a,
+.sub-list-item {
+    color: darkslateblue;
+}
+
+.syntax-item span {
+    color: green;
+    font-weight: bolder;
+}
+
+.selectors-item span {
+    color: green;
+    font-weight: bolder;
+}
+
+.syntax-item > p {
+    color: blueviolet;
+}
+
+/* приклади */
+.example code {
+    color: rgb(0, 106, 7);
+}
+
+.example .blue {
+    color: blue;
+}
+
+.example .pink {
+    color: palevioletred;
+}
+/* ========= */
+
+.selectors-item > p {
+    color: blue;
+}
+
+p + h4 {
+    color: maroon;
+}
+
+.selectors-item h4 + p {
+    color: red;
+}
+/* три останні та усі подальші параграфи */
+.selectors-item h4 + p ~ p + p {
+    color: orange;
+}
+
+.selectors-item div ~ p {
+    color: orange;
+}
+/* ===================================== */
+.header + main .review > div h2 {
+    color: limegreen;
+}
+
+.connect > div > p {
+    color: green;
+}
+
+.connect > div > p + p {
+    color: rgb(230, 173, 2);
+}
+
+.connect > div img ~ p {
+    color: red;
+}
+
+.review + div.history > div > p {
+    color: green;
+}
+
+.review + div.history > div > p + p + p + p {
+    color: blue;
+}
+
+.review ~ div div p a {
+    color: darkcyan;
+}
+
+.review ~ .history + div ul li {
+    color: aqua;
+}
+
+.history + .see-also > div h2 {
+    color: brown;
+}
+
+.history + div ul li a {
+    color: navy;
+}
+
+div.see-also-item ul li + li + li + li a {
+    color: rgb(220, 154, 0);
+}
+
+.footer > div > div > a {
+    color: darkred;
+}
+
+.footer > div > p {
+    color: green;
+}
