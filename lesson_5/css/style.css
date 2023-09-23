@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url(fonts.css);
+@import url("reset.css");
+
+body {
+    font-family: Metropolis, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+h1 {
+    color: rgb(47, 47, 47);
+    font-family: Slaytanic, cursive;
+    font-size: 180px;
+    text-align: center;
+    text-shadow:
+        -5px -5px 1px rgba(0, 204, 0, 0.88),
+        5px 5px 1px rgba(198, 0, 0, 0.649);
+    text-transform: lowercase;
+    line-height: 1.2;
+}
+
+.chapter {
+    color: #34cdb1;
+    font-family: Slaytanic, cursive;
+    font-size: 100px;
+    text-align: center;
+    text-shadow:
+        -5px -5px 1px rgba(78, 0, 204, 0.618),
+        5px 5px 1px rgba(255, 213, 0, 0.602);
+    text-transform: lowercase;
+    line-height: 1.4;
+}
+
+/* CHAPTER ONE */
+
+header > ul {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-shadow:
+        0px 0px 2px rgb(255, 0, 179),
+        0px 0px 5px rgb(149, 0, 255);
+}
+
+header > div p {
+    text-indent: 10px;
+}
+
+.chapter-one > div > h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #e778de;
+    text-shadow: 4px 2px 3px rgba(24, 24, 24, 0.674);
+    line-height: 2;
+    text-indent: 10px;
+}
+
+.chapter-one > div > div > p {
+    text-indent: 10px;
+}
+
+.characteristics h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(226, 93, 168);
+    text-shadow: 4px 2px 3px rgba(24, 24, 24, 0.336);
+    text-indent: 30px;
+    line-height: 2;
+}
+
+.characteristics p {
+    text-indent: 10px;
+}
+
+.characteristics > div > div > div > p {
+    font-weight: 300;
+    font-size: 16px;
+    font-style: oblique;
+}
+
+.characteristics > div > div > ul {
+    text-indent: 30px;
+    line-height: 2;
+}
+
+.characteristics > div > div > div > ul {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    text-indent: 30px;
+}
+
+div h4 {
+    text-indent: 40px;
+    font-size: 20px;
+    color: rgb(92, 120, 52);
+    font-style: oblique;
+    line-height: 1.6;
+    text-decoration: underline;
+}
+
+/* CHAPTER TWO */
+
+[class*="title"] {
+    font-family: Poppins;
+    color: #37393f;
+    font-style: normal;
+    line-height: 1.27;
+    text-transform: capitalize;
+}
+
+[class*="sub"] {
+    color: #6b77e5;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: 1.27;
+}
+
+.text,
+.list {
+    font-family: Inter, serif;
+    color: #7d7d7d;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.46;
+}
+
+/* SERVICES */
+
+.services > div > h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.services > div > h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* PROJECT */
+
+.project > div > h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.list {
+    font-weight: 500;
+}
+
+footer > p {
+    text-align: center;
+    line-height: 2;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+footer > div > p {
+    text-shadow:
+        3px 2px 2px fuchsia,
+        -3px -2px 2px orange;
+    font-family: Slaytanic;
+    font-size: 40px;
+    text-align: center;
+    line-height: 2;
+}
+
+footer > div > p + p {
+    text-shadow: none;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #e778de;
+    word-spacing: 100px;
+}
+
+span {
+    word-spacing: 5px;
+}

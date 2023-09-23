@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Slaytanic";
+    src:
+        url("../fonts/slaytanic/Slaytanic.woff2") format("woff2"),
+        url("../fonts/slaytanic/Slaytanic.woff") format("woff");
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src:
+        url("../fonts/metropolis/metropolisthin.woff2") format("woff2"),
+        url("../fonts/metropolis/metropolisthin.woff") format("woff");
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src:
+        url("../fonts/metropolis/metropolislight.woff2") format("woff2"),
+        url("../fonts/metropolis/metropolislight.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src:
+        url("../fonts/metropolis/metropolisregular.woff2") format("woff2"),
+        url("../fonts/metropolis/metropolisregular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src:
+        url("../fonts/metropolis/metropolissemi-bold.woff2") format("woff2"),
+        url("../fonts/metropolis/metropolissemi-bold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src:
+        url("../fonts/metropolis/metropolisbold.woff2") format("woff2"),
+        url("../fonts/metropolis/metropolisbold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
