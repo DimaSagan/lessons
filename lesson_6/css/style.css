@@ -1,0 +1,295 @@
+@import url(fonts.css);
+@import url("reset.css");
+
+body {
+    color: #7d7d7d;
+    font-family: "Inter", "Sans-serif";
+    font-size: 18px;
+    line-height: 1.46;
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.header {
+    font-family: "DM Serif text", "Serif";
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    text-align: center;
+    word-spacing: 70px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #1b1b1b;
+}
+
+[class*="display"] {
+    display: inline-block;
+}
+
+[class*="title"] {
+    color: #37393f;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.menu-item {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* consulting */
+
+.consulting {
+    margin: 0 auto;
+    max-width: 692px;
+    margin-bottom: 100px;
+}
+
+.team-img {
+    margin-bottom: 37px;
+}
+
+.international {
+    margin: 0 0 42px 0;
+}
+
+.team-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+[class*="sub"] {
+    font-size: 20px;
+}
+
+.sub-title {
+    color: #6b77e5;
+    margin: 0 0 12px 0;
+}
+
+.proactively {
+    margin-bottom: 40px;
+}
+
+.img-benefits {
+    margin-right: 23px;
+}
+
+.benefits-item {
+    vertical-align: top;
+    width: 332px;
+}
+
+.benefits-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.benefits-sub-title {
+    color: #40ddb6;
+
+    margin-bottom: 23px;
+}
+
+.list > li {
+    margin-bottom: 35px;
+    line-height: normal;
+}
+
+.list > li ~ li + li {
+    margin-bottom: 0;
+}
+
+/* jewellery */
+
+.jewellery {
+    max-width: 1170px;
+    margin: 0 auto;
+    line-height: normal;
+    font-size: 0px;
+    margin-bottom: 100px;
+}
+
+.inner {
+    max-width: 563px;
+    padding: 20px 0;
+    margin-right: 30px;
+}
+
+.jewerelly-preline {
+    color: #d06b00;
+    font-size: 28px;
+    margin-bottom: 13px;
+}
+
+.jewellery-line {
+    color: #0e333d;
+    font-family: "DM Serif Text", "Serif";
+    font-size: 59px;
+    line-height: 1.46;
+    margin-bottom: 25px;
+}
+
+.jewellery-imgs {
+    font-size: 0;
+    vertical-align: top;
+}
+.jewellery-img {
+    margin-right: 22px;
+}
+
+.text {
+    color: #474747;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* practice */
+
+.practice h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.practice {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.practice > div {
+    margin-bottom: 100px;
+}
+
+[class*="description"] {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.color,
+.example,
+.overflow {
+    padding: 0 20px;
+}
+/* color */
+.color {
+    font-size: 0;
+}
+
+.palette {
+    margin-right: 150px;
+}
+
+.blue,
+.red,
+.yellow {
+    width: 250px;
+    height: 250px;
+}
+
+.red,
+.yellow {
+    margin-top: -90px;
+}
+
+.blue-wrap {
+    padding-left: 95px;
+}
+
+.blue {
+    background-color: rgb(0, 234, 255);
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.542);
+}
+
+.yellow {
+    margin-left: -50px;
+    background-color: rgba(255, 255, 0, 0.684);
+}
+
+.palette-description {
+    max-width: 380px;
+    padding-top: 100px;
+    vertical-align: top;
+}
+
+/* example */
+
+.example-item > div {
+    vertical-align: bottom;
+    margin: 0 20px 20px 0; /* тут є подвійний відступ*/
+    color: antiquewhite;
+    background-color: #b485bc;
+    max-width: 350px;
+    /* box-sizing: content-box; */
+}
+
+.description-example {
+    max-width: 380px;
+    margin-bottom: -50px;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.item-two {
+    padding: 40px 5px;
+}
+
+.item-three {
+    padding: 5px 50px;
+}
+
+/* overflow  */
+.description-overflow {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.overflow-item {
+    max-width: 500px;
+    margin: 0px 60px 20px 0; /* тут є подвійний відступ*/
+    background-color: #41f494;
+    color: #414141;
+    max-height: 600px;
+}
+
+.visible {
+    overflow: visible;
+    max-height: 500px;
+}
+
+.hidden {
+    overflow: hidden;
+    font-size: 50px;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+/* footer */
+
+.footer {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social {
+    margin: 0 auto 15px;
+}
+
+.social > a > img {
+    width: 50px;
+    margin-right: 40px;
+}
