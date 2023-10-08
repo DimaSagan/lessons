@@ -1,0 +1,434 @@
+@import url(fonts.css);
+@import url("reset.css");
+
+body {
+    padding-top: 0px;
+}
+
+/* practice */
+.background {
+    background: url(../img/practice/mexican_style.jpeg) fixed;
+    margin-bottom: 150px;
+}
+.polygone {
+    max-width: 1330px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    background: url(../img/practice/pattern_nike.jpeg) 0 0 / 500px;
+    background-color: #3c4242;
+}
+.block-color {
+    font-size: 0;
+    margin-bottom: 70px;
+}
+.color,
+.gradient,
+.radial-gradient,
+.deg-gradient {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+.color,
+.gradient,
+.radial-gradient {
+    margin-right: 32px;
+}
+.color {
+    background-color: fuchsia;
+}
+.gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(4, 34, 72, 1) 25%,
+        rgba(9, 91, 121, 1) 50%,
+        rgba(5, 187, 156, 1) 75%,
+        rgba(0, 255, 143, 1) 100%
+    );
+}
+.radial-gradient {
+    background: rgb(251, 63, 63);
+    background: radial-gradient(
+        circle,
+        rgba(251, 63, 63, 1) 0%,
+        rgba(252, 70, 246, 1) 25%,
+        rgba(126, 70, 252, 1) 50%,
+        rgba(70, 252, 215, 1) 75%,
+        rgba(182, 252, 70, 1) 100%
+    );
+}
+.deg-gradient {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(
+        23deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(216, 0, 255, 1) 25%,
+        rgba(0, 3, 255, 1) 50%,
+        rgba(0, 246, 121, 1) 75%,
+        rgba(255, 220, 0, 1) 100%
+    );
+}
+.exaple-one,
+.exaple-two {
+    max-width: 625px;
+    height: 200px;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    display: inline-block;
+}
+.exaple-one {
+    padding: 20px 50px 0 150px;
+    background-image: url(../img/practice/swoosh.png);
+    background-color: yellowgreen;
+    background-size: 150px;
+    margin-right: 45px;
+}
+.exaple-two {
+    padding: 20px 150px 0 50px;
+    background-image: url(../img/practice/jumpman.png);
+    background-color: rgb(205, 164, 50);
+    background-size: 125px;
+    background-position: 490px 5px;
+}
+.background-img-text,
+.example-three-text,
+.example-four-text {
+    font-size: 20px;
+    line-height: 1.27;
+}
+.nike,
+.example-three {
+    margin-bottom: 70px;
+}
+.example-three {
+    height: 380px;
+    background:
+        url(../img/practice/jumpman.png) repeat-y 50px 0 / 125px,
+        url(../img/practice/swoosh.png) repeat-y 200px 5px / 160px,
+        url(../img/practice/jumpman.png) repeat-y 350px 0 / 125px,
+        url(../img/practice/swoosh.png) repeat-y 500px 5px / 160px,
+        url(../img/practice/jumpman.png) repeat-y 650px 0 / 125px,
+        url(../img/practice/swoosh.png) repeat-y 800px 5px / 160px,
+        url(../img/practice/jumpman.png) repeat-y 950px 0 / 125px,
+        url(../img/practice/swoosh.png) repeat-y 1100px 5px / 160px,
+        linear-gradient(
+            90deg,
+            rgba(255, 156, 0, 1) 0%,
+            rgba(216, 0, 255, 1) 25%,
+            rgba(0, 123, 255, 1) 50%,
+            rgba(124, 255, 144, 1) 75%,
+            rgba(247, 255, 0, 1) 100%
+        );
+    padding: 0px 200px;
+    overflow: scroll;
+    color: aliceblue;
+}
+.example-three-text {
+    background-color: #3c42428e;
+    background-attachment: fixed;
+    padding: 10px;
+}
+.example-four {
+    height: 600px;
+
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 1) 100%);
+    overflow: scroll;
+    color: rgb(215, 215, 215);
+}
+.example-four-text {
+    background-image: url(../img/practice/jumpman.png);
+    background-size: 200px;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    padding: 200px 15px 15px 15px;
+}
+
+/* consulting */
+
+.consulting {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: "Inter";
+    color: #7d7d7d;
+    font-size: 18px;
+    line-height: 1.46;
+    margin-bottom: 150px;
+}
+.consulting h2,
+.whitecollar-points h4,
+.project-wrap-text h4,
+.whitecollar-item-list{
+    font-family: "Poppins";
+    color: #37393f;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1.21;
+}
+.consulting h5 {
+    display: inline-block;
+    background: url(../img/consulting/box.png) no-repeat 0 3px / 12px;
+}
+.whitecollar{
+    margin-bottom: 100px;
+}
+.whitecollar-inner {
+    max-width: 673px;
+    
+}
+.whitecollar-title {
+    margin-bottom: 20px;
+}
+.whitecollar-title h5 {
+    padding-left: 18px;
+    color: #37393f;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: normal;
+}
+.whitecollar-title h2 {
+    font-size: 40px; 
+}
+.whitecollar-text{
+    margin-bottom: 20px;
+}
+.whitecollar-text p {
+    margin-bottom: 20px;
+}
+.whitecollar-item-list {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 43px;
+    text-transform: none;
+}
+.whitecollar-item-list li {
+    background: url(../img/consulting/check.svg) no-repeat 0 3px / 27px;
+    margin-bottom: 23px;
+    padding-left: 35px;
+}
+.whitecollar-points {
+    margin-bottom: 37px;
+}
+.whitecollar-points p {
+    font-size: 16px;
+}
+.whitecollar-points h4,
+.project-wrap-text h4{
+    font-weight: 600;
+}
+.point-one,
+.point-two {
+    display: inline-block;
+    border: 1px solid #e3e3e3;
+    width: 295px;
+    padding: 32px 32px 32px 90px;
+}
+.point-one {
+    background: url(../img/consulting/icon_experience.svg) no-repeat 32px 28px / 39px;
+    margin-right: 21px;
+}
+.point-two {
+    background: url(../img/consulting/icon_winner.svg) no-repeat 32px 28px / 39.5px;
+}
+
+.button a {
+    color: #fff;
+    background-color: #6b77e5;
+    padding: 22px 27px;
+    display: inline-block;
+}
+
+.last-projects h2,
+.last-projects h5 {
+    margin-bottom: 14px;
+}
+.last-projects h2 {
+    text-transform: none;
+}
+.last-projects-inner .whitecollar-title,
+.last-projects-text {
+    text-align: center;
+}
+.last-projects-text {
+    max-width: 852px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+}
+.project-one,
+.project-two,
+.project-thre,
+.project-four,
+.project-five,
+.project-six{
+min-width: 384px;
+height: 501px;
+background: url(../img/consulting/worck_space.png) -47px center / 656px no-repeat;
+margin-bottom: 24px;
+
+}
+
+.project-two{
+    background: url(../img/consulting/man.png)
+}
+.project-thre{
+    background: url(../img/consulting/phone.png);
+}
+.project-four{
+    background: url(../img/consulting/wooman.png);
+}
+.project-five{
+    background: url(../img/consulting/worck.png);
+}
+.project-six{
+    background: url(../img/consulting/pc_coffe.png);
+}
+.project-wrap-text h4{
+    font-size: 20px;
+line-height: 1.27;
+margin-bottom: 10px;
+}
+.project-wrap-text p {
+    font-size: 14px;
+    background: url(../img/consulting/calendar.svg) no-repeat;
+    padding-left: 25px;
+}
+.projects{
+    font-size: 0;
+}
+.space{
+    margin-right: 34px;
+}
+.project-wrap{
+    display: inline-block;
+    
+}
+.project-block-one{
+    margin-bottom: 58px;
+}
+
+/* euphotia */
+
+.euphoria {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.euphoria h2,
+.euphoria h3,
+.euphoria h4 {
+    font-family: "Core Sans C", "Sans serif";
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+.clothing h3,
+.clothing h4 {
+    color: #807d7e;
+    font-size: 20px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+.top {
+    font-size: 0;
+    max-width: 1240px;
+    height: 31px;
+    white-space: nowrap;
+}
+.top h2 {
+    color: #3c4242;
+    font-size: 28px;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+    display: inline-block;
+    white-space: normal;
+    background: url(../img/euphoria/rectangle_euphoria.png) no-repeat;
+    padding-left: 21px;
+}
+.top > * {
+    vertical-align: top;
+}
+.top {
+    margin-bottom: 30px;
+}
+.clothing {
+    padding-left: 21px;
+    margin-bottom: 150px;
+}
+.clothing h3,
+.clothing-text {
+    margin-bottom: 25px;
+}
+.clothing-text-last,
+.clothing-text-last p,
+.clothing-text p,
+.fassion-inner p {
+    color: #807d7e;
+    font-family: "Causten", "sans serif";
+    font-size: 20px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+.clothing-text p span,
+.clothing-text-last p span {
+    font-weight: 700;
+}
+
+
+.fashion{
+    max-width: 1240px;
+    height: 640px;
+    background: url(../img/euphoria/green.png) no-repeat,
+    url(../img/euphoria/band.png) no-repeat right;
+    padding: 183px 0 0 74px;
+}
+
+.fassion-inner{
+max-width: 466px;
+color:#fff;
+margin-bottom: 50px;
+}
+
+.fassion-inner h2{
+    font-weight: 800;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.fassion-inner p{
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.fashion-button{
+    font-family: "Causten", "Sans Serif";
+    font-weight: 600;
+}
+.fashion-button a{
+    padding: 12px 44px;
+    border-radius: 8px;
+    background: #FFF;
+    display: inline-block;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    border-top: 1px solid red;
+    box-shadow: 0px -9px 10px 0px rgba(202, 0, 0, 0.066);
+    padding: 10px 0;
+}
+.social a img {
+    width: 40px;
+}
+.social a {
+    margin-right: 30px;
+}
