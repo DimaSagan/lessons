@@ -411,6 +411,7 @@ body {
     content: "";
     width: 72px;
     height: 72px;
+    border-radius: 50%;
     display: block;
     margin: 0 auto;
     margin-top: -97px;
@@ -473,23 +474,25 @@ body {
     padding-top: 32px;
     margin-right: 45px;
 }
-.img-wrap{
-    width: 334px;
-    height: 381px;
-}
-.border {
-    width: 334px;
+
+.img-wrap {
+    max-width: 334px;
     height: 381px;
     border: 1px solid #000;
 }
-.custom-img img {
+
+.img-wrap img {
     width: 100%;
-    margin-top: -372px;
-    margin-left: 10px;
+    max-height: 100%;
+    margin: 9px 0 0 10px;
+    object-fit: cover;
 }
+
 .custom-img a:first-of-type {
+    max-width: 334px;
+    max-height: 381px;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 34px;
 }
 
 .custom-img a:nth-child(2) {
