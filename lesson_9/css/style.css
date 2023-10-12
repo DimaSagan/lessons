@@ -499,7 +499,7 @@ body {
     display: inline-block;
     margin-bottom: 4px;
 }
-.wrap:hover {
+.img-wrap:hover {
     opacity: 0.7;
 }
 .new-collection-wrap {
