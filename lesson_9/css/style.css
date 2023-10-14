@@ -274,7 +274,14 @@ body {
     vertical-align: top;
 }
 .benefits-img {
+    width: 331px;
+    height: 262px;
     margin-right: 29px;
+}
+.benefits-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .benefits-inner {
     max-width: 332px;
@@ -376,7 +383,7 @@ body {
 }
 .work-title {
     text-align: center;
-    margin-bottom: 77px;
+    margin-bottom: 41px;
 }
 .work-title h5 {
     margin-bottom: 16px;
@@ -385,6 +392,7 @@ body {
     font-size: 40px;
 }
 .work-card {
+    padding-top: 40px;
     font-size: 0;
 }
 .card {
