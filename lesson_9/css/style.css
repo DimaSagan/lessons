@@ -368,7 +368,7 @@ body {
 .card-text p:not(:last-child) {
     margin-bottom: 10px;
 }
-.whitecollar-card div:not(:last-child) {
+.whitecollar-card li:not(:last-child) {
     margin-bottom: 31px;
 }
 .whitecollar-button a {
