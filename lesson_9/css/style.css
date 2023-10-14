@@ -345,15 +345,15 @@ body {
 .whitecollar-card {
     margin-bottom: 48px;
 }
-.card-item {
+.whitecollar-card > li {
     padding: 28px 41px 28px 38px;
     border: 1px solid #e3e3e3;
 }
-.card-item h3 {
+.whitecollar-card > li h3 {
     font-size: 20px;
     margin-bottom: 19px;
 }
-.card-item h3::before {
+.whitecollar-card > li h3::before {
     content: "";
     background: url(../img/consulting/check.svg) no-repeat 0 center / 27px;
     width: 28px;
