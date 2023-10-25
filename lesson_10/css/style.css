@@ -1,0 +1,77 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+    padding: 0 15px;
+    padding-top: 25px;
+    background-color: rgb(0, 0, 0);
+    font-family: "Fira Sans", "sans serif";
+}
+.container {
+    max-width: 1280px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.397);
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: aliceblue;
+    font-weight: 600;
+}
+h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.vector-wrap {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(247, 205, 205);
+    box-shadow: 4px 9px 10px 1px rgba(0, 0, 0, 0.262);
+    vertical-align: top;
+    padding: 20px;
+}
+.vector-wrap:not(:last-child) {
+    margin-bottom: 20px;
+}
+.img-wrap img {
+    vertical-align: middle;
+    width: 130px;
+}
+.img-wrap img:not(:last-child) {
+    margin-right: 20px;
+}
+.img-wrap:not(:last-child) {
+    margin-bottom: 10px;
+}
+.vector-wrap p {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.vector-wrap > img {
+    max-width: 100%;
+}
+.vector-wrap > img:not(:last-child) {
+    margin-bottom: 20px;
+}
+.vector-wrap:nth-child(4) {
+    text-align: center;
+}
+.vector-wrap > img:nth-child(2) {
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+.vector-wrap > img:nth-child(3) {
+    width: 600px;
+}
+.vector-wrap:nth-child(6) {
+    text-align: center;
+}
+footer {
+    text-align: end;
+}
