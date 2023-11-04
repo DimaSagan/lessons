@@ -1,0 +1,307 @@
+@import url(fonts.css);
+@import url("reset.css");
+
+[class*="--container"] {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* NAV */
+.header--config {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    font-family: "Inter", "sans serif";
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.27;
+    padding: 5px 0;
+    font-size: 0;
+    background: url(../img/mall.jpeg) 0 0 / 100% no-repeat;
+}
+.header__logo {
+    display: inline-block;
+    margin-right: 220px;
+    vertical-align: middle;
+    position: relative;
+}
+.logo__img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo__img img {
+    width: 70px;
+}
+.logo__title {
+    font-family: "Poppins", "sans serif";
+    font-weight: 700;
+    font-size: 35px;
+    display: inline-block;
+    color: #fff;
+}
+.logo__title::after {
+    content: "";
+    border-bottom: 5px solid red;
+    display: block;
+    margin-top: 5px;
+}
+
+/* >>>>>> MENU <<<<<< */
+.header__menu {
+    display: inline-block;
+}
+.header__menu {
+    font-size: 0;
+}
+.menu__list {
+    position: relative;
+}
+.list-menu__item {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(219, 219, 219, 0.145);
+    min-width: 150px;
+    text-align: center;
+    color: #fff;
+    z-index: 13;
+    font-size: 20px;
+}
+/* MENU IN HOVER */
+.list-menu__item:hover {
+    background-color: rgba(219, 219, 219, 0.584);
+}
+.list-menu__item:hover .list-menu__link {
+    color: red;
+}
+/* >>>>>======<<<<< */
+.list-menu__item:not(:last-child) {
+    margin-right: 70px;
+}
+.list-menu__link {
+    padding: 5px;
+}
+
+/* >>>>>> SECOND MENU <<<<<< */
+.list-menu__menu-second {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 15;
+}
+/* HOVER SECOND MENU */
+.list-menu__item:hover .second-menu {
+    visibility: visible;
+    opacity: 1;
+}
+/* =================== */
+.list-menu__menu-second::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    /* background-color: red; */
+}
+.second-menu {
+    min-width: 150px;
+    background-color: rgba(28, 28, 28, 0.816);
+}
+.second-menu__item {
+    position: relative;
+    padding: 5px;
+    z-index: 13;
+}
+/* >>>>>====<<<<<< */
+.second-menu__item:hover {
+    background-color: rgba(219, 219, 219, 0.584);
+}
+.second-menu__item:hover .second-menu__link {
+    color: red;
+}
+.second-menu__link {
+    width: 100%;
+}
+
+/* >>>>>> THIRD MENU <<<<<< */
+.second-menu__menu-third {
+    position: absolute;
+    top: 0;
+    left: 102%;
+    visibility: hidden;
+    opacity: 0;
+}
+/* HOVER THIRD MENU */
+.second-menu__item:hover .third-menu {
+    visibility: visible;
+    opacity: 1;
+}
+.second-menu__menu-third::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 5px;
+    height: 100%;
+    /* background-color: red; */
+}
+.third-menu {
+    min-width: 150px;
+    background-color: rgba(28, 28, 28, 0.816);
+}
+.third-menu__item {
+    padding: 5px;
+}
+/* >>>>>========<<<<<<< */
+.third-menu__item:hover {
+    background-color: rgba(219, 219, 219, 0.584);
+}
+.third-menu__item:hover .third-menu__link {
+    color: red;
+}
+.third-menu__link {
+    width: 100%;
+}
+
+/* ======================================================================= */
+.page__vinyl {
+    position: relative;
+    background: url(../img/mall.jpeg) 0 0 / 100% no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 200px;
+}
+.vinyl__spacer {
+    width: 100%;
+    height: 100px;
+    background: url(../img/mall.jpeg) 0 -80px / 100% no-repeat;
+    position: sticky;
+    top: 80px;
+}
+.content__title {
+    position: sticky;
+    font-size: 100px;
+    color: #fff;
+    top: 65px;
+    left: 10px;
+    text-transform: capitalize;
+    text-shadow: 5px 2px 9px black;
+    z-index: 7;
+    line-height: 1.27;
+    display: inline-block;
+}
+
+.content__title--center {
+    left: 40%;
+}
+.content__title--end {
+    left: 100%;
+}
+.content p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+    background-color: #00000073;
+    padding: 15px;
+    text-align: justify;
+}
+.content__spacer-bottom {
+    width: 100%;
+    height: 900px;
+}
+
+/* PAGE */
+
+.page__team-card {
+    margin: 0 auto;
+    margin-bottom: 31px;
+}
+.card {
+    max-width: 1220px;
+    font-size: 0;
+}
+.card__item {
+    max-width: 386px;
+    height: 532px;
+    position: relative;
+    display: inline-block;
+}
+.card__item:not(:last-child) {
+    margin-right: 31px;
+}
+.card__photo img {
+    width: 100%;
+}
+/* COVERING */
+.card__social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.social {
+    background-color: rgb(107, 119, 229, 0.7);
+}
+.social__icon {
+    position: absolute;
+    top: 241px;
+    left: 105px;
+    font-size: 0;
+}
+.social__icon img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.85;
+}
+.social__icon img:hover {
+    opacity: 1;
+}
+.social__link {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.social__link:not(:last-child) {
+    margin-right: 13px;
+}
+.card__title:hover ~ .card__social,
+.card__social:hover {
+    opacity: 1;
+}
+/* NAME & POSITION */
+.card__title {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 22px;
+    padding: 0 22px;
+    text-align: center;
+    z-index: 2;
+}
+.title__wrapper {
+    background-color: #fff;
+    width: 100%;
+    padding: 27px 0;
+}
+.card__title a:hover {
+    text-decoration: underline;
+    color: #40ddb6;
+}
+.card__name {
+    font-family: "Poppins", "sans-serif";
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 4px;
+    line-height: 1.27;
+}
+.card__position {
+    font-family: "Inter", "sans-serif";
+    color: #7d7d7d;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 1.35;
+}
