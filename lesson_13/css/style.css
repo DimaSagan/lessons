@@ -1,0 +1,349 @@
+@import url(fonts.css);
+@import url("reset.css");
+
+.wrapper__page {
+    background-color: rgb(209, 209, 209);
+}
+
+.page__car {
+    margin: 0 auto;
+    min-height: 800px;
+    font-size: 0;
+    background: rgb(36, 34, 34);
+    background: linear-gradient(
+        0deg,
+        rgba(36, 34, 34, 1) 2%,
+        rgba(92, 92, 92, 1) 21%,
+        rgba(255, 103, 67, 1) 21%,
+        rgba(34, 112, 195, 1) 77%,
+        rgba(36, 67, 101, 1) 97%
+    );
+    margin-bottom: 200px;
+}
+.car__body-element {
+    position: relative;
+    transform: translate(390px, 280px);
+}
+/* ===>>>>trunk <<<<==== */
+.body-element__back {
+    display: inline-block;
+}
+.back__trunk {
+    display: inline-block;
+    width: 190px;
+    height: 245px;
+    background-color: rgb(250, 205, 99);
+    outline: 5px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+    border-right: 5px solid rgb(244, 238, 183);
+    border-radius: 100% 0 0 0;
+    transform: translateX(10px);
+    position: relative;
+    z-index: -1;
+}
+/* =======>>>> back door <<<<====== */
+.body-element__center {
+    font-size: 0;
+    display: inline-block;
+}
+.center__back {
+    display: inline-block;
+}
+.back-center__door-top {
+    width: 250px;
+    height: 200px;
+    background-color: rgb(250, 205, 99);
+    border-radius: 100% 0 0 0;
+    outline: 2px solid orange;
+    border: 3px solid orange;
+    border-right: 0;
+}
+.back-center__glass {
+    width: 220px;
+    height: 170px;
+    background-color: rgb(81, 133, 238);
+    border: 3px solid rgb(86, 101, 168);
+    box-shadow: inset -5px 5px 0px 1px rgba(252, 247, 204, 0.219);
+    transform: translate(17px, 17px);
+    border-radius: 100% 5px 5px 5px;
+}
+.back-center__door-bottom {
+    width: 250px;
+    height: 200px;
+    background-color: rgb(250, 205, 99);
+    outline: 2px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+    border-left: 2px solid orange;
+}
+/* ====>>> front door <<<==== */
+.center__front {
+    display: inline-block;
+}
+.front-center__door-top {
+    width: 320px;
+    height: 200px;
+    background-color: rgb(250, 205, 99);
+    border-radius: 0 100% 0 0;
+    outline: 2px solid orange;
+    border: 3px solid orange;
+    box-shadow: inset -3px 1px 0px 0.7px rgb(252, 247, 204);
+}
+.front-center__glass {
+    width: 290px;
+    height: 170px;
+    background-color: rgb(81, 133, 238);
+    border: 3px solid rgb(86, 101, 168);
+    box-shadow: inset -5px 5px 0px 1px rgba(252, 247, 204, 0.219);
+    transform: translate(15px, 17px);
+    border-radius: 5px 100% 5px 5px;
+    padding-left: 250px;
+    padding-top: 30px;
+}
+.front-center__door-bottom {
+    width: 320px;
+    height: 200px;
+    background-color: rgb(250, 205, 99);
+    outline: 2px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+}
+.handle__back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(84, 84, 84);
+    transform: translate(10px, 10px);
+    box-shadow: inset -2px 0px 15px 2px rgba(0, 0, 0, 0.504);
+}
+.handle__front {
+    width: 60px;
+    height: 20px;
+    background-color: rgb(250, 205, 99);
+    transform: translate(5px, -25px);
+    outline: 3px solid orange;
+    border-top: 3px solid rgb(252, 247, 204);
+    border-right: 3px solid rgb(244, 238, 183);
+    border-radius: 10px;
+}
+
+/* ====>>> hood <<<==== */
+.body-element__front {
+    display: inline-block;
+}
+.front__hood {
+    width: 300px;
+    height: 215px;
+    background-color: rgb(250, 205, 99);
+    outline: 5px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+    border-right: 5px solid rgb(244, 238, 183);
+
+    border-radius: 0 90% 0 0;
+    display: inline-block;
+}
+
+.front__bamper {
+    display: inline-block;
+    width: 100px;
+    height: 85px;
+    background-color: rgb(250, 205, 99);
+    outline: 5px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+    border-right: 5px solid rgb(244, 238, 183);
+    border-radius: 0 50px 35px 0;
+    transform: translateX(-65px);
+}
+/* ===>>>arch<<<==== */
+.body-element__front-arch {
+    width: 225px;
+    height: 145px;
+    background-color: rgb(250, 205, 99);
+    border-radius: 100% 100% 0 0;
+    outline: 5px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+    border-right: 5px solid rgb(244, 238, 183);
+    position: absolute;
+    bottom: 0;
+    left: 750px;
+}
+
+.body-element__wheel {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -70px;
+    right: 8px;
+    outline: 3px solid rgb(69, 69, 69);
+}
+
+.wheel__disc {
+    width: 170px;
+    height: 170px;
+    background-color: rgb(4, 4, 4);
+    border-radius: 50%;
+    transform: translate(15px, 15px);
+    border: 22px solid rgb(205, 206, 204);
+    outline: 2px solid rgb(149, 141, 141);
+}
+
+.disc__line-one {
+    width: 20px;
+    height: 126px;
+    background-color: rgb(205, 206, 204);
+    transform: translateX(51px);
+}
+.disc__line-two {
+    width: 126px;
+    height: 20px;
+    background-color: rgb(205, 206, 204);
+    transform: translateY(-73px);
+}
+.disc__line--front {
+    transform: translate(-7px, -148.9px) rotate(45deg);
+}
+.body-element__back-arch {
+    width: 225px;
+    height: 145px;
+    background-color: rgb(250, 205, 99);
+    border-radius: 100% 100% 0 0;
+    outline: 5px solid orange;
+    border-top: 5px solid rgb(252, 247, 204);
+    border-right: 5px solid rgb(244, 238, 183);
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+/* =====>>> doorstep <<<<==== */
+.body-element__doorstep {
+    position: absolute;
+    bottom: -15px;
+    left: 275px;
+}
+.doorstep__top {
+    font-size: 0;
+}
+.doorstep__top-start {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(250, 205, 99);
+    border-radius: 100% 0 0 0;
+    display: inline-block;
+    border: 3px solid orange;
+    border-right: 0px;
+}
+
+.doorstep__top-center {
+    width: 410px;
+    height: 35px;
+    background-color: rgb(250, 205, 99);
+    display: inline-block;
+    border: 3px solid orange;
+    border-left: 0px;
+    border-right: 0px;
+}
+.doorstep__top-end {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(250, 205, 99);
+    border-radius: 0 100% 0 0;
+    display: inline-block;
+    border: 3px solid orange;
+    border-left: 0px;
+}
+.doorstep__down {
+    width: 480px;
+    height: 15px;
+    background-color: rgb(250, 205, 99);
+    border: 2px solid orange;
+}
+
+/* +++ PRACTICE +++ */
+[class*="--container"] {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.title {
+    text-align: center;
+}
+.practice__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.practice__example:not(:last-child) {
+    margin-bottom: 100px;
+}
+.example {
+    font-size: 0;
+    text-align: center;
+}
+.example__item {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(84, 84, 187);
+    vertical-align: top;
+}
+.example__item:not(:last-child) {
+    margin-right: 60px;
+}
+.example__demo {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(132, 181, 86);
+    font-size: 25px;
+    padding-top: 50px;
+    text-transform: capitalize;
+}
+
+.example__demo--translate {
+    transform: translate(15px, 15px);
+}
+.example__demo--skew {
+    transform: skew(-8deg);
+}
+
+.example__demo--rotate {
+    transform: rotate(15deg);
+}
+
+.example__demo--scale {
+    transform: scale(0.9);
+}
+.example__demo--multi {
+    transform: scale(0.7) rotate(15deg) translate(12%, 7%);
+}
+
+.example__item--perspective {
+    perspective: 300px;
+    perspective-origin: center;
+}
+
+.example__demo--perspective {
+    transform: rotateX(20deg);
+    height: 100%;
+}
+
+.example__demo--translate3d {
+    transform: translate3d(0px, 0px, -75px);
+}
+
+.example__demo--scale3d {
+    transform: scale3d(0.9, 0.7, -7);
+}
+.example__demo--rotate3d {
+    transform: rotate3d(1, 1, 1, 9deg);
+}
+
+.example__item--perspective3d {
+    perspective: 300px;
+    transform-style: preserve-3d;
+    background-color: rgba(84, 84, 187, 0.58);
+}
+.example__demo--translate3d-second {
+    transform: rotateY(20deg);
+}
