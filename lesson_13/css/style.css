@@ -22,7 +22,7 @@
 }
 .car__body-element {
     position: relative;
-    transform: translate(390px, 280px);
+    transform: translate(10%, 280px);
 }
 /* ===>>>>trunk <<<<==== */
 .body-element__back {
