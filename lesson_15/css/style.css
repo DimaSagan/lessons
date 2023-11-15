@@ -1,0 +1,355 @@
+@import url(fonts.css);
+@import url("reset.css");
+
+[class*="--container"] {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper__header {
+    margin-bottom: 50px;
+}
+.header {
+    padding: 34px 0 31px 0;
+    font-family: "Causten", "sans-serif";
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.nav-header {
+}
+.nav-header--container {
+    /* border: 2px solid black; */
+}
+.nav-header__logo {
+}
+.nav-header__search {
+    display: flex;
+    align-items: center;
+
+    flex-basis: 184px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    padding: 12px 40px;
+    border-radius: 8px;
+    background: #f6f6f6;
+}
+.nav-header__search::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: url(../img/euphoria/search.svg) center / 20px no-repeat;
+    display: inline-flex;
+    margin-right: 12px;
+}
+.search__input {
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    background: #f6f6f6;
+}
+.nav-header__menu {
+    /* background-color: gray; */
+    position: relative;
+}
+.menu {
+    font-size: 18px;
+    cursor: default;
+}
+.menu__item {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.menu__item::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(../img/euphoria/arrow.svg) center / 10px 5px no-repeat;
+    display: inline-flex;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+.nav-header__menu:hover .menu__item::after {
+    transform: rotate(180deg);
+}
+.menu__item-link {
+    transition: 0.4s;
+}
+.menu__item:hover .menu__item-link {
+    color: #8a33fd;
+}
+.menu__item:hover .menu__sub {
+    visibility: visible;
+    opacity: 1;
+}
+.menu__sub {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    font-size: 18px;
+    /* background-color: gray; */
+}
+.menu__sub::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    /* background-color: red; */
+}
+.menu__sub-item {
+    padding: 5px;
+}
+.menu__sub-item-link {
+    transition: 0.4s;
+}
+.menu__sub-item:hover .menu__sub-item-link {
+    color: #8a33fd;
+}
+
+.nav-header__wrapper {
+    display: flex;
+}
+.nav-header__wrapper--center {
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 60px 0 163px;
+}
+.nav-header__wrapper--end {
+    display: flex;
+    column-gap: 30px;
+}
+
+/* >>>>   button   <<<<< */
+
+.nav-header__button {
+}
+.button {
+    font-family: "Causten", "sans-serif";
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background: #8a33fd;
+    padding: 12px 48px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.button:hover {
+    background: #752ad7;
+}
+.button--white {
+    color: #8a33fd;
+    background-color: #fff;
+    border: 1px solid #3c4242;
+    transition: 0.4s;
+}
+.button--white:hover {
+    color: #fff;
+    background: #752ad7;
+}
+
+/* =====>> Page settings <<====== */
+
+.page {
+    font-family: "Causten", "sans serif";
+}
+
+/* ===>>> Cards <<<<==== */
+.page__card {
+    margin-bottom: 50px;
+}
+
+.card__title {
+    margin-bottom: 70px;
+}
+.title--left-line::before {
+    content: "";
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background: #8a33fd;
+    display: inline-block;
+    transform: translateY(4px);
+    margin-right: 20px;
+}
+.title {
+    font-family: "Core Sans C", "sans-serif";
+    font-weight: 600;
+    font-size: 34px;
+    color: #3c4242;
+    text-transform: capitalize;
+}
+
+.card__wrapper {
+    display: flex;
+    margin: 0 -25px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.card__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    flex-basis: 25%;
+    padding: 0 25px;
+}
+.item-card {
+}
+.item-card__img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item-card__img img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.item-card__img:hover img {
+    transform: scale(1.05);
+}
+
+.item-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.item-card__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    text-transform: capitalize;
+}
+.title-text {
+    color: #2a2f2f;
+    font-weight: 700;
+}
+.item-card__title {
+    /* color: #2A2F2F; */
+    font-size: 18px;
+    flex-grow: 1;
+    transition: 0.3s;
+    transform-origin: 0 10px;
+    letter-spacing: -0.715px;
+}
+.item-card__title:hover {
+    transform: scale(1.08);
+}
+
+.item-card__slogan {
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.item-card__slogan:hover {
+    color: #4e4e4e;
+}
+.item-card__arrow {
+    flex-grow: 0;
+    display: inline-flex;
+    flex-basis: 20px;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.item-card__arrow:hover {
+    transform: scale(1.08);
+}
+
+/* ===>>> WishList <<<=== */
+
+.wishlist__list {
+    max-width: 915px;
+    margin: 0 auto;
+}
+.wishlist__title {
+    margin-bottom: 50px;
+}
+.wishlist__item {
+    display: flex;
+    position: relative;
+    padding-bottom: 30px;
+}
+.wishlist__content-wrapper {
+    display: flex;
+    /* column-gap: 36px; */
+    flex-grow: 1;
+}
+.wishlist__item::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #edeef2;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.wishlist__close {
+    align-self: center;
+}
+
+.wishlist__img {
+    flex-basis: 110px;
+    margin: 0 36px;
+}
+.wishlist__img img {
+    width: 100%;
+    transition: 0.3s;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.wishlist__disctiption {
+    font-size: 22px;
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.wishlist__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.wishlist__text-title {
+    letter-spacing: 0.44px;
+    text-transform: capitalize;
+}
+.wishlist__text-parameters {
+    display: flex;
+}
+.parameters__item {
+    color: #807d7e;
+    padding-left: 6px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.44px;
+}
+.wishlist__price {
+    color: #807d7e;
+    font-weight: 700;
+    justify-self: flex-end;
+}
+.wishlist__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.wishlist__button {
+    /* display: inline-block; */
+    padding: 12px 22px;
+    font-size: 18px;
+}
