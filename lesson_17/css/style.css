@@ -1,0 +1,388 @@
+@import url(fonts.css);
+@import url("reset.css");
+
+[class*="__container"] {
+    max-width: 1358px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", "sans-serif";
+}
+.wrapper__page {
+    flex-grow: 1;
+}
+/* ==>>> HEADER <<<=== */
+.wrapper__header {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #606060;
+}
+.header h1 {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* ===>>> SECTION ONE <<<=== */
+
+.page__section:not(:last-child) {
+    margin-bottom: 50px;
+}
+.section {
+}
+.page__section--bg {
+    /* background-color: rgb(205, 136, 79); */
+    background: #fefaf4 url(../img/india/flower.webp) no-repeat 100% 100% / 175px;
+    padding: 125px 0 114px;
+}
+.section__container {
+    /* border: 1px solid black; */
+}
+.section__content {
+    display: flex;
+    column-gap: 56px;
+    font-family: "Inter", "sans-serif";
+}
+
+.content__arrow {
+}
+.content__arrow img {
+    width: 100%;
+    height: 100%;
+}
+.content__button {
+    display: flex;
+    align-items: center;
+}
+.arrow {
+    width: 31px;
+    height: 57px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+.arrow__img {
+}
+.arrow__img--left {
+    transform: scale(-1);
+}
+.content__wrapper {
+}
+.title {
+    font-family: "DM Serif Text", "serif";
+}
+.content__text {
+    margin-bottom: 53px;
+}
+
+.content__title {
+    font-size: 58px;
+    margin-bottom: 27px;
+}
+.content__sub-title {
+    color: #606060;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.content__column {
+    display: flex;
+    /* gap: 48px; */
+    margin: 0 -22px;
+}
+
+.content__card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 0 0 33.333%;
+    padding: 10px 22px;
+    /* flex: 1 1 33.333%; */
+}
+.card__image-link {
+    /* overflow: hidden; */
+}
+.card__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 357 / 240;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+.card__title {
+    font-size: 24px;
+    line-height: 1.2;
+    transform-origin: 0 0;
+    transition: all 0.3s;
+}
+.card__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    gap: 8px;
+    justify-content: space-between;
+}
+.card__text p {
+    color: #4c4b49;
+    line-height: 1.6;
+}
+.card__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__link {
+    color: #f55529;
+    font-weight: 800;
+    line-height: 1.5;
+    transform-origin: 0 0;
+    transition: all 0.3s;
+}
+.card__button {
+    transition: all 0.3s;
+}
+
+@media (any-hover: hover) {
+    .arrow:hover {
+        background-color: #4c4b491e;
+    }
+
+    .card__title:hover {
+        transform: scale(1.02);
+    }
+
+    .card__link:hover {
+        transform: scale(1.03);
+    }
+
+    .card__button:hover {
+        transform: scale(1.05);
+    }
+
+    .content__link:hover {
+        background: #b03e2a;
+    }
+
+    .menu__item:hover .menu__item-link::after {
+        transform: translateX(0%);
+    }
+    /* .card__image:hover{
+        transform: scale(1.05);
+    } */
+}
+
+/* ===>>> SECTION TWO <<<=== */
+
+.section__container--two {
+    max-width: 1203px;
+}
+.content__text--parameters-section-two {
+    text-align: center;
+    color: #291403;
+}
+
+.content__sub-title--font-family {
+    font-family: "Cormorant Infant", "serif";
+    font-size: 30px;
+    font-weight: 700;
+    color: #818181;
+}
+
+.content__column--parameters-section-two {
+    margin: 0 -15px;
+    margin-bottom: 76px;
+}
+
+.content__card--catalog {
+    flex: 0 0 25%;
+    padding: 0 15px;
+}
+
+.card__image--ratio {
+    aspect-ratio: 271 / 270;
+}
+
+.card__title--font-family,
+.card__link--font-family {
+    font-family: "Cormorant Infant", "serif";
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.content__action {
+    text-align: center;
+}
+.content__link {
+    color: #fff;
+    background: #ff7a49;
+    padding: 22px 42px;
+    font-family: "Inter", "sans-serif";
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+/* ===>>> SECTION THREE <<<=== */
+
+.page__section--section-three-bg {
+    background-color: #0e333d;
+}
+.content__wrapper--padding {
+    padding: 94px 0;
+}
+.content__column--parameters-section-three {
+    margin: 0 -15px;
+}
+
+.content__text--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+}
+.text__wrapper {
+    text-align: center;
+}
+.content__menu {
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    column-gap: 41px;
+}
+.content__sub-title--style,
+.menu__item {
+    font-family: "Raleway", "sans-serif";
+    font-weight: 600;
+    color: #fff;
+}
+.menu__item {
+    overflow: hidden;
+}
+.menu__item-link::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+    transform: translateX(-101%);
+    transition: all 0.4s;
+}
+
+.content__sub-title--style {
+    font-weight: 500;
+}
+.card__title--color,
+.card__link--color {
+    color: #fff;
+}
+.content__title--color {
+    color: #fff;
+}
+
+/* ===>>> FOOTER <<<=== */
+.wrapper__footer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #606060;
+}
+.footer {
+}
+.footer__item {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ===>>> BREAKE POINT <<<=== */
+
+@media (max-width: 1400.98px) {
+    .page__section--bg {
+        background: #fefaf4 url(../img/india/flower.webp) no-repeat 100% 95% / 135px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .page__section--bg {
+        background: #fefaf4 url(../img/india/flower.webp) no-repeat 100% 95% / 135px;
+    }
+}
+
+@media (max-width: 990.98px) {
+    .content__column {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .content__card--catalog,
+    .content__card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 0 0 50%;
+        padding: 0 22px;
+    }
+    .content__text {
+        margin-bottom: 30px;
+    }
+    .content__title {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+    .content__sub-title {
+        font-size: 33px;
+    }
+    .page__section--bg {
+        background: #fefaf4;
+        padding: 70px 0 80px;
+    }
+    .content__button {
+        display: none;
+    }
+    .card__title {
+        font-size: 33px;
+    }
+    .card__text p {
+        font-size: 18px;
+    }
+    .menu__list {
+        display: flex;
+        font-size: 22px;
+    }
+    .card__link--font-family {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+    .content__column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .menu__list {
+        display: flex;
+        column-gap: 29px;
+        row-gap: 10px;
+        font-size: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content__link {
+        width: 100%;
+    }
+    .card__link {
+        font-size: 20px;
+    }
+    .card__link--font-family {
+        font-size: 26px;
+    }
+}
