@@ -508,8 +508,8 @@ section:not(:last-child) {
     display: grid;
     border-radius: 12px;
 }
-.list-saving__card:nth-child(4n),
-.list-saving__card:nth-child(5n) {
+.list-saving__card:nth-child(5n+4),
+.list-saving__card:nth-child(5n+5) {
     grid-column: span 3;
 }
 .card-saving img {
@@ -522,8 +522,8 @@ section:not(:last-child) {
     object-fit: cover;
     border-radius: 12px;
 }
-.card-saving:nth-child(4n) img,
-.card-saving:nth-child(5n) img {
+.card-saving:nth-child(5n+4) img,
+.card-saving:nth-child(5n+5) img  {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
