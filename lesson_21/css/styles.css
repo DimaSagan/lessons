@@ -1273,7 +1273,7 @@ address {
 .card-item__text p {
   color: #7f7f7f;
   font-family: "Causten";
-  font-size: 13;
+  font-size: 13px;
   font-weight: 500;
   text-transform: capitalize;
 }
