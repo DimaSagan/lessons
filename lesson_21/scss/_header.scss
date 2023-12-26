@@ -1,0 +1,300 @@
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 108px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $navBg;
+    z-index: 100;
+    padding: 10px 0;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 108px;
+        background-color: $navBg;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @media (max-width: 551px) {
+            height: 127px;
+        }
+    }
+
+    // .header__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        column-gap: 5px;
+        @media (max-width: 551px) {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+
+    // .header__logo
+
+    &__logo {
+        z-index: 11;
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+
+    // menu
+    & .menu {
+        flex-grow: 1;
+        color: $navText;
+        font-family: "Causten";
+        font-size: 22px;
+        font-weight: 500;
+        position: relative;
+        // z-index: 101;
+        @media (min-width: 956px) {
+            z-index: 11;
+        }
+        // .menu__body
+
+        &__body {
+            @media (max-width: 955px) {
+                position: fixed;
+                top: -100%;
+                // left: -100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding-top: 128px;
+                padding-right: 15px;
+                background-color: rgba(0, 0, 0, 0.533);
+                z-index: 10;
+                backdrop-filter: blur(7px) grayscale(30%);
+                overflow: auto;
+                transition: all 0.3s;
+            }
+            @media (max-width: 551px) {
+                padding-top: 145px;
+            }
+            .menu-open & {
+                    // left: 0;
+                    top: 0;
+            } 
+        }
+
+        // .menu__list
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-shrink: 1;
+            justify-content: center;
+            column-gap: 40px;
+            row-gap: 10px;
+
+            @media (max-width: 1035px) {
+                column-gap: 30px;
+            }
+
+            @media (max-width: 955px) {
+                flex-direction: column;
+                flex-grow: 1;
+                text-align: right;
+                font-size: 35px;
+                font-weight: 700;
+                color: #f4f4f4;
+                row-gap: 35px;
+            }
+        }
+
+        // .menu__item
+
+        &__item {
+        }
+
+        // .menu__item-link
+
+        &__item-link {
+            text-transform: capitalize;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    // .header__action
+
+    &__action {
+        display: flex;
+        column-gap: 10px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        justify-content: space-between;
+        z-index: 11;
+        @media (max-width: 955px) {
+            justify-content: flex-end;
+            column-gap: 30px;
+        }
+        @media (max-width: 551px) {
+            width: 100%;
+            column-gap: 10px;
+            justify-content: space-between;
+        }
+        // @media(max-width: 410px){
+        //     // flex-direction: column-reverse;
+        //     // row-gap: 15px;
+        // }
+    }
+    // .header____action-wrapper
+    &__action-wrapper {
+        display: flex;
+        column-gap: 12px;
+        align-self: flex-end;
+        @media (max-width: 345px) {
+            column-gap: 6px;
+        }
+    }
+
+    // .header__action-image
+    &__action-image {
+        transition: all 0.3s;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 44 / 44;
+        border-radius: 8px;
+    }
+    &__action-link {
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.09);
+        }
+    }
+
+    // .header__action-button
+
+    &__action-button {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        display: none;
+        align-self: center;
+        @media (max-width: 955px) {
+            display: block;
+        }
+        &::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $burgerButton;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s;
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $burgerButton;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.3s;
+        }
+        & span {
+            width: 100%;
+            height: 2px;
+            background-color: $burgerButton;
+            display: block;
+        }
+
+        .menu-open & {
+            &::before {
+                transform: rotate(-405deg);
+                top: 50%;
+                margin-top: -1px;
+            }
+            &::after {
+                transform: rotate(405deg);
+                bottom: 50%;
+                margin-bottom: -1px;
+            }
+            span {
+                transform: scale(0);
+            }
+        }
+    }
+
+    // form
+    .search {
+        flex-basis: 250px;
+        min-width: 100px;
+
+        @media (max-width: 410px) {
+            flex-basis: auto;
+        }
+        // .search__label
+
+        &__label {
+            position: relative;
+            // display: flex;
+            // align-items: center;
+            // column-gap: 20px;
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                background: url(../img/header/search.svg) no-repeat center / 20px;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                z-index: 1;
+                @media (max-width: 410px) {
+                    left: 10px;
+                }
+            }
+        }
+
+        // .search__input
+
+        &__input {
+            width: 100%;
+            border-radius: 8px;
+            background: $searchBg;
+            position: relative;
+            height: 44px;
+            padding: 0 10px 0 40px;
+            @media (max-width: 410px) {
+                padding: 0 10px 0 30px;
+            }
+            &::placeholder {
+                color: $navText;
+                font-family: "Causten";
+                font-size: 16px;
+                font-weight: 400;
+                // text-align: center;
+                text-transform: capitalize;
+                @media (max-width: 410px) {
+                    text-align: right;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+

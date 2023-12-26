@@ -1,0 +1,277 @@
+// footer color
+$footerBg: #3c4242;
+$footerText: #fff;
+
+.wrapper {
+    // .wrapper__footer
+
+    &__footer {
+    }
+}
+.footer {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: $footerBg;
+    font-family: "Causten", "sans-serif";
+    color: $footerText;
+    @media (max-width: $tablet) {
+        padding-top: 40px;
+    }
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__info
+
+    &__info {
+        // display: flex;
+        // justify-content: space-between;
+        column-gap: 10px;
+        padding-left: 6%; /*76px;*/
+        padding-right: 7%; /*85px;*/
+        // flex-wrap: wrap;
+        display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 0.2fr 0.2fr 0.22fr 0.38fr;
+        &:not(:last-child) {
+            margin-bottom: 22px;
+        }
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 25px;
+            padding: 0;
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+        }
+    }
+
+    // .footer__info-column
+
+    &__info-column {
+        // max-width: 394px;
+        @media (max-width: $tablet) {
+            max-width: 100%;
+        }
+    }
+
+    // .footer__info-title
+
+    &__info-title {
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: capitalize;
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: $tablet) {
+            font-size: 23px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: $mobile) {
+            font-size: 30px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    // .footer__info-list
+
+    &__info-list {
+    }
+
+    // .footer__info-item
+
+    &__info-item {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 216.9%;
+        text-transform: capitalize;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+        @media (max-width: $mobileSmall) {
+            font-size: 16px;
+        }
+        a {
+            overflow: hidden;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                display: block;
+                transform: translateX(-100%);
+                transition: all 0.3s;
+            }
+        }
+        @media (any-hover: hover) {
+            a:hover {
+                &::after {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    // .footer__action
+
+    &__action {
+        display: grid;
+        grid-template-columns: 0.69fr 0.4fr;
+        padding-left: 6%; /*76px;*/
+        padding-right: 7%; /*85px;*/
+        align-items: end;
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+            justify-items: center;
+            padding: 0;
+        }
+    }
+
+    // .footer__social
+
+    &__social {
+        .footer__link {
+            max-width: 37px;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                border-radius: 11px;
+                transition: all 0.3s;
+                @media(any-hover: hover){
+                    &:hover{
+                        transform: scale(1.07);
+                    }
+                }
+            }
+        }
+    }
+
+    // .footer__app
+
+    &__app {
+    }
+
+    // .footer__app-title
+
+    &__app-title {
+        color: $footerText;
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: capitalize;
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: $tablet) {
+            text-align: center;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // .footer__app-store
+
+    &__app-store {
+        display: flex;
+        column-gap: 6%;
+
+        .footer__link {
+            max-width: 153px;
+            // &:not(:last-child) {
+            //     margin-right: 22px;
+            // }
+            img {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 153 / 51;
+                object-fit: cover;
+                border-radius: 11px;
+                transition: all 0.3s;
+                @media(any-hover: hover){
+                    &:hover{
+                        transform: scale(1.07);
+                    }
+                }
+            }
+        }
+    }
+
+    // .footer__spoiler
+
+    &__spoiler {
+        padding: 29px 0;
+        border-top: 1px solid rgba(190, 188, 189, 0.4);
+        border-bottom: 1px solid rgba(190, 188, 189, 0.4);
+        &:not(:last-child) {
+            margin-bottom: 37px;
+        }
+        details {
+            cursor: pointer;
+
+            summary {
+                padding-left: 6%; /*76px;*/
+                padding-right: 2%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 28px;
+                font-weight: 700;
+                @media (max-width: $tablet) {
+                    padding: 0;
+                }
+                &::-webkit-details-marker {
+                    display: none !important;
+                }
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 14px;
+                    background: url(../img/footer/arrow.svg) no-repeat center;
+                    align-self: center;
+                    transition: all 0.3s;
+                }
+            }
+            p {
+                padding-top: 10px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 135%;
+                padding-left: 6%; /*76px;*/
+            }
+        }
+        details[open] {
+            summary {
+                transition: all 0.3s;
+                &::after {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
