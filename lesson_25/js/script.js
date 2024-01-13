@@ -245,13 +245,13 @@ if (items.length) {
 Дано в html: текст, далі кнопка з класом button.
 Треба прокрутити скрол сторінки до кнопки */
 
-// const windowScroll = window.scrollY
-// console.log(windowScroll)
-// window.scrollTo({
-//     top: 1062,
-//     left: 0,
-//     behavior: "smooth"
-// })
+const windowScroll = window.scrollY
+console.log(windowScroll)
+window.scrollTo({
+    top: 1062,
+    left: 0,
+    behavior: "smooth"
+})
 
 /* Задача №6
 Дано в html: посилання з класом link
