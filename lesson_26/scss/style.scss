@@ -1,0 +1,118 @@
+@use "sass:math";
+
+@import "_reset";
+@import "_function";
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    // opacity: 0;
+    transition: 2s;
+    &.load {
+        opacity: 1;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.page {
+    flex-grow: 1;
+}
+.header {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(173, 205, 110);
+    margin-bottom: toRem(100);
+    &:not(:last-child) {
+        margin-bottom: toRem(100);
+    }
+    &__container {
+    }
+
+    &__nav {
+        min-height: 60px;
+        background-color: rgb(205, 203, 110);
+    }
+}
+
+.section-one {
+    &:not(:last-child) {
+        margin-bottom: toRem(200);
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .item {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(193, 193, 77);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        .info {
+            font-size: toRem(80);
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(51, 168, 49, 0.621);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: 0.5s;
+        }
+        &.active {
+            .info {
+                left: 0%;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(173, 205, 110);
+}
+
+.section-two {
+    h2 {
+        text-align: center;
+        font-size: toRem(40);
+        font-weight: bolder;
+        text-transform: uppercase;
+        &:not(:last-child) {
+            margin-bottom: toRem(50);
+        }
+    }
+    p {
+        line-height: 1.3;
+        font-size: toRem(18);
+        letter-spacing: 2px;
+        text-align: justify;
+        &:not(:last-child) {
+            margin-bottom: toEm(40);
+        }
+    }
+}
+.my-timer {
+    text-align: center;
+    padding: 175px 0;
+    max-width: 400px;
+    background-color: yellowgreen;
+    font-size: toRem(50);
+    color: #fff;
+    border-radius: 50%;
+}
