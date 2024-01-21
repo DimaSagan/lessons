@@ -82,6 +82,7 @@ textarea {
 }
 
 body {
+  opacity: 0;
   -webkit-transition: 2s;
   transition: 2s;
 }
